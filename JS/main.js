@@ -88,10 +88,15 @@ function upoladimage(files)
  
 }
 
-function g(remoweAllRow){
+function g(remoweRow){
     let icon=xmark.parentNode.parentNode;
     table.remoweChild(icon);
+    // for (let i = table.length-1; i < 0; i--) {
+    //     table.id=count--;
+        
+    // }
 }
+    
 
 //function deletedata(row){
    // function Func() {
