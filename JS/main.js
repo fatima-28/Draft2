@@ -77,9 +77,16 @@ function upoladimage(files)
  
 }
 
-function deletedata(row){
-    function Geeks() {
-        document.getElementById(row).remove();
-    }
+function (remoweAllRow){
+    let icon=xmark.parentNode.parentNode;
+    table.remoweChild(icon);
 }
+
+//function deletedata(row){
+   // function Geeks() {
+      //  document.getElementById(row).remove();
+ //   }
+//}
+
+    
 
