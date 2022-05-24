@@ -83,7 +83,7 @@ function (remoweAllRow){
 }
 
 //function deletedata(row){
-   // function Geeks() {
+   // function Func() {
       //  document.getElementById(row).remove();
  //   }
 //}
