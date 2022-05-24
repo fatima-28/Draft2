@@ -2,8 +2,9 @@ let dropElement=document.querySelector(".main");
 let table=document.querySelector(".table");
 let upload=document.querySelector(".icon");
 let input=document.querySelector("input");
-let xmark=document.querySelector(".mark");
 let xbutton=document.querySelector(".xbutton")
+
+
 
 xbutton.onclick=function(){
     table.remove()
@@ -16,8 +17,18 @@ function deleterow(order) {
   }
 
 
+
+  function remove(removeIcon){
+      
+    let row = removeIcon.parentNode.parentNode;
+   
+    table.lastElementChild.removeChild(row);
+  }
+
+
 input.onchange=function(e){
     upoladimage(e.target.files);
+    e.target.value=""; //teachers bug
 }
 // console.log(table.lastElementChild);
 
@@ -49,7 +60,7 @@ function upoladimage(files)
          </td>
          <td>${file.name}</td>
          <td>${file.size}</td>
-         <td><i class="fa-solid fa-xmark mark"></i><td>
+         <td><i onclick="remove(this);" class="fa-solid fa-xmark mark"></i><td>
        </tr>
        `
    
@@ -77,7 +88,7 @@ function upoladimage(files)
  
 }
 
-function (remoweAllRow){
+function g(remoweAllRow){
     let icon=xmark.parentNode.parentNode;
     table.remoweChild(icon);
 }
